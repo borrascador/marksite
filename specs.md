@@ -38,7 +38,7 @@ Make the website like a virtual museum, an art gallery where every part of the e
 ### Navigation
 
 * Different possible structures
-  * Pictures, Drawings, Songs, Poems, Video
+  * Pictures, Drawings, Songs, Poems, Video, Store
   * Or group by collections instead
   * Make it easy to support either one
 * Store name: "Store" or "Showcase" or "Fair"

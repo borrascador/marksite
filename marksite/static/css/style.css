@@ -1,0 +1,21 @@
+body {
+  background: #111;
+}
+
+h1 {
+  text-align: center;
+  font-size: 16em;
+  margin: 0;
+}
+
+#red {
+  color: #c20;
+}
+
+#green {
+  color: #0c2;
+}
+
+#blue {
+  color: #20c;
+}
