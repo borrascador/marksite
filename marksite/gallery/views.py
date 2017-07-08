@@ -12,3 +12,10 @@ class HomeView(TemplateView):
         context = {}
         return context
 
+class ImageView(TemplateView):
+
+    template_name = "images.html"
+    
+    def get_context_data(self, **kwargs):
+        context = {}
+        return context

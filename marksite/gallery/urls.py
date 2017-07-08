@@ -1,9 +1,9 @@
 from django.conf.urls import url
-from gallery.views import HomeView
+from gallery.views import HomeView, ImageView
 
 urlpatterns = [
     url(r'$^', HomeView.as_view(), name='home'),
-    #url(r'^photos/', .......),
+    url(r'^images/', ImageView.as_view(), name='images'),
     #url(r'^drawings/', ),
     #url(r'^songs/', ),
     #url(r'^poems/', ),
