@@ -35,9 +35,16 @@ PREREQ_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
 ]
 
-PROJECT_APPS = []
+SITE_ID = 1
+
+PROJECT_APPS = [
+    'photologue',
+    'sortedm2m',
+    'gallery',
+]
 
 INSTALLED_APPS = PREREQ_APPS + PROJECT_APPS
 
@@ -118,13 +125,25 @@ USE_L10N = True
 USE_TZ = True
 
 
+# Media Files
+# https:// .....
+
+STATIC_ROOT = ''
+
+STATIC_URL = '/media/'
+
+STATICFILES_DIRS = [
+    os.path.join('media'),
+]
+
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
-
-import os.path
 
 STATIC_ROOT = ''
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = ( os.path.join('static'), )
+STATICFILES_DIRS = [
+    os.path.join('static'),
+]
