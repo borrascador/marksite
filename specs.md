@@ -44,7 +44,7 @@ Make the website like a virtual museum, an art gallery where every part of the e
 * Store name: "Store" or "Showcase" or "Fair"
 * DL links everywhere, everything downloadable
 
-## Name Ideas
+### Name Ideas
 
 * mark
   * .art
@@ -67,3 +67,23 @@ Make the website like a virtual museum, an art gallery where every part of the e
 
 http://newgtlds.icann.org/en/program-status/delegated-strings
 https://en.wikipedia.org/wiki/List_of_Internet_top-level_domains#ICANN-era_generic_top-level_domains
+
+## Marek's suggestions 7-8-17
+
+### Donation concepts
+
+* Collection Plate - Good
+* Wishing Well - Neutral
+* Goblin - Bad
+
+### Collection plate w/ candles
+
+Dark page, on the bottom there is a gargoyle holding a plate
+Plate has white text field where you enter amount to donate, then hit enter
+And then a dim blue or red light appears floating in the air somewhere above the gargoyle. The lights are the candles arranged in a church on an iron grill. One by one blue and red candles go on for each individual donation, and they disappear at midnight.
+
+### Concept of Phone as Magic Mirror
+
+Phones deserve something great that remind you of the magic of technology - a donation app on the phone would perhaps serve a purpose, i.e. some money forwarded to a cause.
+
+
