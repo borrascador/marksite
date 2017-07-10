@@ -1,12 +1,6 @@
 from django.conf.urls import url
-from gallery.views import HomeView, ImageView
+from gallery.views import ImageView
 
 urlpatterns = [
-    url(r'$^', HomeView.as_view(), name='home'),
-    url(r'^images/', ImageView.as_view(), name='images'),
-    #url(r'^drawings/', ),
-    #url(r'^songs/', ),
-    #url(r'^poems/', ),
-    #url(r'^video/', ),
-    #url(r'store/', ),
+    url(r'images/', ImageView.as_view(), name='images'),
 ]

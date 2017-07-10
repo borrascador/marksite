@@ -15,11 +15,16 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
-from gallery import urls, views
+from views import HomeView
+from gallery import urls
 
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    #url(r'^$', HomePageView.as_view(), name='home'),
-    url(r'^', include('gallery.urls')),
+    url(r'^$', HomeView.as_view(), name='home'),
+    url(r'^gallery/', include('gallery.urls')),
+    #url(r'^songs/', ),
+    #url(r'^poems/', ),
+    #url(r'^video/', ),
+    #url(r'store/', ),
 ]
