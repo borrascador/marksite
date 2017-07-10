@@ -35,9 +35,14 @@ PREREQ_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
 ]
 
+SITE_ID = 1
+
 PROJECT_APPS = [
+    'photologue',
+    'sortedm2m',
     'gallery',
 ]
 

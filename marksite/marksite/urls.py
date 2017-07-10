@@ -23,6 +23,10 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', HomeView.as_view(), name='home'),
     url(r'^gallery/', include('gallery.urls')),
+    url(r'^photologue/', \
+        include('photologue.urls', \
+        namespace='photologue')
+    ),
     #url(r'^songs/', ),
     #url(r'^poems/', ),
     #url(r'^video/', ),
