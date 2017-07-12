@@ -4,12 +4,15 @@
 <html lang="en">
 
 <head>
-    <title>MarkWorld</title>
-    <link rel=StyleSheet type="text/css" href="{% static '/css/style.css' %}">
+<title>{% block title %}{% endblock %}</title>
+<link rel=StyleSheet type="text/css" href="{% block stylesheet_rtl %}{% static '/css/style.css' %}{% endblock %}">
+{% block extrastyle %}{% endblock %}
+{% block extrahead %}{% endblock %}
+{% block blockbots %}{% endblock %}
 </head>
 
 <body>
-    
+{% block content %}{% endblock %} 
 </body>
 
 </html>

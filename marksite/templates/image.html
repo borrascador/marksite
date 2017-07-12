@@ -1,0 +1,21 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+{% extends "photologue/photo_detail.html" %}
+{% load static %}
+
+{% block title %}{{ object.title }}{% endblock %}
+
+{% block content %}
+
+    <div class="row">
+		<div class="left-pane">
+			<!-->Insert 'previous' button here</!-->
+		</div>
+        <div class="img-pane">
+			<img src="{{ object.get_display_url }}" class="img-detail" alt="{{ object.title }}">
+        </div>
+        <div class="right-pane">
+        	<!-->Insert 'next' button here</!-->
+        </div>
+    </div>
+
+{% endblock %}

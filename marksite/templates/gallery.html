@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+{% extends "photologue/root.html" %}
+{% load static %}
+
+{% block title %}Galleries{% endblock %}
+
+{% block content %}
+
+<div class="bookshelf">
+    {% if object_list %}
+        {% for gallery in object_list %}
+            <div class="book">
+                <div class="cover-image-box">
+                    <a href="{{ gallery.get_absolute_url }}">                        
+                        <img src="{% static '/images/book.png' %}" class="cover-image" alt="{{ gallery.title }}">
+                    </a>
+                </div>
+                <div class="gallery-title-box">
+                    <p class="gallery-title">{{ gallery.title }}</p>
+                </div>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>No galleries were found.</p>
+    {% endif %}
+</div>
+
+{% endblock %}

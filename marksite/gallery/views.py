@@ -1,13 +1,12 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
-from django.shortcuts import render
-from django.views.generic.base import TemplateView
+from django.views.generic.list import ListView
+from photologue.models import Gallery
 
-class ImageView(TemplateView):
 
-    template_name = "images.html"
-    
-    def get_context_data(self, **kwargs):
-        context = {}
-        return context
+
+class GalleryView(ListView):
+	model = Gallery
+	template_name = "gallery.html"
+	
