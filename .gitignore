@@ -2,3 +2,5 @@ test
 venv
 *.pyc
 secret.py
+static/admin/
+static/sortedm2m/
