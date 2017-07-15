@@ -28,8 +28,12 @@ body {
   align: center;
 }
 
+.img-pane {
+  width: 100%;
+  height: auto;
+}
 
-/* img selectors */
+/* img selectors 
 
 .img-detail {
   width: 100%;

@@ -25,7 +25,7 @@ from gallery import urls
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', HomeView.as_view(), name='home'),
-    url(r'^gallery/', include('gallery.urls')),
+    url(r'^gallery-list/', include('gallery.urls')),
     url(r'^photologue/', \
         include('photologue.urls', \
         namespace='photologue')

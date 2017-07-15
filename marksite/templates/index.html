@@ -1,15 +1,13 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+{% extends "photologue/root.html" %}
 {% load static %}
 
-<html lang="en">
+{% block title %}Home{% endblock %}
 
-<head>
-    <title>Home</title>
-    <link rel=StyleSheet type="text/css" href="{% static '/css/style.css' %}">
-</head>
+{% block content %}
 
-<body>
-    <p>MARK</p>
-</body>
+<a href="{% url 'gallery-list' %}">      
+    <h1>Galleries</h1>
+</a>
 
-</html>
+{% endblock %}

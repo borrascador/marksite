@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+{% extends "photologue/photo_detail.html" %}
+{% load static %}
+
+{% block title %}{{ object.title }}{% endblock %}
+
+{% block content %}
+
+<div class="row">
+    <div class="left-pane">
+        <a href="">
+            <p>Back</p>
+        </a>
+    </div>
+    <div class="img-pane">
+        <img src="{{ object.image.url }}" class="display" alt="{{ object.title }}">
+    </div>
+    <div class="right-pane">
+        <a href="">
+            <p>Next</p>
+        </a>
+    </div>
+</div>
+
+{% endblock %}

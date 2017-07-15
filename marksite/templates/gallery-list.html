@@ -11,9 +11,11 @@
         {% for gallery in object_list %}
             <div class="book">
                 <div class="cover-image-box">
-                    <a href="{{ gallery.get_absolute_url }}">                        
-                        <img src="{% static '/images/book.png' %}" class="cover-image" alt="{{ gallery.title }}">
-                    </a>
+                    {% with gallery.public|first as photo %}
+                        <a href="{% url 'image' gallery.slug photo.slug %}">
+                            <img src="{% static '/images/book.png' %}" class="cover-image" alt="{{ gallery.title }}">
+                        </a>
+                    {% endwith %}                            
                 </div>
                 <div class="gallery-title-box">
                     <p class="gallery-title">{{ gallery.title }}</p>

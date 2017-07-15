@@ -2,11 +2,15 @@
 from __future__ import unicode_literals
 
 from django.views.generic.list import ListView
-from photologue.models import Gallery
+from django.views.generic.detail import DetailView
+from photologue.models import Gallery, Photo
 
 
 
-class GalleryView(ListView):
+class GalleryListView(ListView):
 	model = Gallery
-	template_name = "gallery.html"
+	template_name = "gallery-list.html"
 	
+class ImageDetailView(DetailView):
+    model = Photo
+    template_name = "image-detail.html"        

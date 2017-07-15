@@ -1,8 +1,9 @@
 from django.conf.urls import url
-from .views import GalleryView
+from .views import GalleryListView, ImageDetailView
 
 
 
 urlpatterns = [
-	url(r'^$', GalleryView.as_view(), name='gallery-view'),
+	url(r'^$', GalleryListView.as_view(), name='gallery-list'),
+    url(r'^([\-\d\w]+)/(?P<slug>[\-\d\w]+)/$', ImageDetailView.as_view(), name='image'),
 ]
