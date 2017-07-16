@@ -1,0 +1,5 @@
+{% if photo %}
+<a href="{% url 'image' gallery.slug photo.slug %}">
+    <p>Previous</p>
+</a>
+{% endif %}

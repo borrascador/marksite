@@ -1,0 +1,9 @@
+{% if photo %}
+<a href="{% url 'image' gallery.slug photo.slug %}">
+    <p>Next</p>
+</a>
+{% else %}
+<a href="{% url 'gallery-list' %}">      
+    <p>Return to Galleries</p>
+</a>
+{% endif %}

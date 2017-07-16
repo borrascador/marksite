@@ -12,5 +12,8 @@ class GalleryListView(ListView):
 	template_name = "gallery-list.html"
 	
 class ImageDetailView(DetailView):
-    model = Photo
-    template_name = "image-detail.html"        
+    model = Photo    
+    template_name = "image-detail.html"
+    
+    def gallery(self):
+        return Gallery.objects.get(slug = self.kwargs['galleryslug'])
