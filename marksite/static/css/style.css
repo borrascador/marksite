@@ -2,10 +2,11 @@ body {
   background: #000;
   font-family: "Courier", monotype;
   color: #ed140e;
+  margin: 0;
 }
 
 
-/* div selectors */
+/* div selectors gallery-list */
 
 .bookshelf {
   margin: 2em;
@@ -28,16 +29,44 @@ body {
   align: center;
 }
 
-.img-pane {
+/* div selectors image-detail */
+
+.outer-container {
+  position : absolute;
+  display: table;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
-/* img selectors 
+.inner-container {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.centered-content {
+  display: inline-block;
+  text-align: left;
+  padding : 20px;
+}
+
+#panel {
+  position:fixed;
+  width: 10%;
+  top: 50%;
+  margin-top: -64px;
+}
+
+#center {
+  width: 80%;
+}    
+
+
+/* img selectors */
 
 .img-detail {
-  width: 100%;
-  height: auto;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 
@@ -51,4 +80,4 @@ p {
 
 .gallery-title {
   font-size: 1em;
-}  
+}

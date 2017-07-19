@@ -7,16 +7,22 @@
 
 {% block content %}
 
-<div class="row">
-    <div class="left-pane">
-        {% previous_in_gallery object view.gallery %}
+<div class="outer-container">
+    <div class="inner-container" id="panel">
+        <div class="centered-content">
+            {% previous_in_gallery object view.gallery %}
+        </div>
     </div>
-    <div class="img-pane">
-        <img src="{{ object.image.url }}" class="display" alt="{{ object.title }}">
+    <div class="inner-container" id="center">
+        <div class="centered-content">
+            <img src="{{ object.image.url }}" class="img-detail" alt="{{ object.title }}">
+        </div>
     </div>
-    <div class="right-pane">
-        {% next_in_gallery object view.gallery %}
+    <div class="inner-container" id="panel">
+        <div class="centered-content">
+            {% next_in_gallery object view.gallery %}
+        </div>
     </div>
-</div>
+</div>    
 
 {% endblock %}

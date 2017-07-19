@@ -1,9 +1,11 @@
+{% load static %}
+
 {% if photo %}
 <a href="{% url 'image' gallery.slug photo.slug %}">
-    <p>Next</p>
+    <img src="{% static '/images/rightbutton.png' %}">
 </a>
 {% else %}
 <a href="{% url 'gallery-list' %}">      
-    <p>Return to Galleries</p>
+    <img src="{% static '/images/rightbutton.png' %}">
 </a>
 {% endif %}
