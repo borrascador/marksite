@@ -5,6 +5,10 @@
 
 {% block title %}{{ object.title }}{% endblock %}
 
+{% block extrastyle %}
+<link rel=StyleSheet type="text/css" href="{% static '/css/image-detail.css' %}">
+{% endblock %}
+
 {% block content %}
 
 <div class="outer-container">

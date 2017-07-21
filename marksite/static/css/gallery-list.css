@@ -1,0 +1,29 @@
+/* div selectors gallery-list */
+
+.bookshelf {
+  margin: 2em;
+}  
+
+.book {
+  margin: 0;
+  margin-right: 2em;
+  display: inline-block;
+}  
+
+.cover-image-box {
+  margin: 0;
+  align: center;
+}
+
+.gallery-title-box {
+  margin: 0;
+  margin-top: 1em;
+  align: center;
+}
+
+
+/* p selectors */
+
+.gallery-title {
+  font-size: 1em;
+}

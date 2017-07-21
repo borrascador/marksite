@@ -1,0 +1,16 @@
+body {
+  background: #000;
+  font-family: "Courier", monotype;
+  color: #ed140e;
+  margin: 0;
+}  
+
+
+/* p selectors */
+
+p {
+  text-align: center;
+  font-size: 2em;
+  margin: 0;
+}
+
