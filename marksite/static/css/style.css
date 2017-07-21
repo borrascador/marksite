@@ -69,6 +69,9 @@ body {
   max-width: 100%;
 }
 
+.candle {
+  max-width: 30%;
+}  
 
 /* p selectors */
 

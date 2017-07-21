@@ -1,5 +1,5 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
-{% extends "photologue/root.html" %}
+{% extends "base.html" %}
 {% load static %}
 
 {% block title %}Home{% endblock %}
@@ -8,6 +8,10 @@
 
 <a href="{% url 'gallery-list' %}">      
     <h1>Galleries</h1>
+</a>
+
+<a href="{% url 'donate' %}">      
+    <h1>Donate</h1>
 </a>
 
 {% endblock %}

@@ -20,11 +20,13 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from views import HomeView
 from gallery import urls
+from donate import urls
 
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', HomeView.as_view(), name='home'),
+    url(r'^donate/', include('donate.urls')),
     url(r'^gallery-list/', include('gallery.urls')),
     url(r'^photologue/', \
         include('photologue.urls', \
