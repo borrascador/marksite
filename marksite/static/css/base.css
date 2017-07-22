@@ -6,11 +6,15 @@ body {
 }  
 
 
-/* p selectors */
+/* div selectors for index */
 
-p {
+.index {
   text-align: center;
-  font-size: 2em;
-  margin: 0;
-}
+}  
 
+
+/* a selectors */
+
+a {
+  color: #ed140e;
+}  
