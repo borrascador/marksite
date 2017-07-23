@@ -1,5 +1,47 @@
+/* grid layout inspired by Zell Liew */
+/* https://zellwk.com/blog/responsive-grid-system/ */
+
+
+/* grid rules */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: after;
+}    
+
+.l-wrap {
+  max-width: 1140px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.grid .grid-item {
+  width: 20%;
+  float: left;
+}  
+
+.grid:after {
+  display: table;
+  clear: both;
+  content: '';
+}  
+
+
 /* img selectors donate */
 
 .candle {
-  max-width: 30%;
+  max-width: 100%;
+  opacity: 0;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+.candle:hover {
+  opacity: 1;
 }
