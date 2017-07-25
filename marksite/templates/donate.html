@@ -18,7 +18,7 @@
     <div class="grid">
         {% for i in view.loop_times %}
             <div class="grid-item">
-                <img src="{% static '/images/candle-red.png' %}" class="candle" id="candle_{{ forloop.counter }}">
+                <img src="{% static view.choose_candle %}" class="candle" id="candle_{{ forloop.counter }}">
             </div>
         {% endfor %}
     </div>
