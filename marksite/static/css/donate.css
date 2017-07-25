@@ -1,8 +1,6 @@
+/* grid rules */
 /* grid layout inspired by Zell Liew */
 /* https://zellwk.com/blog/responsive-grid-system/ */
-
-
-/* grid rules */
 
 html {
   box-sizing: border-box;
@@ -32,7 +30,9 @@ html {
 }  
 
 
-/* img selectors donate */
+/* img selectors */
+/* fade-in inspired by C. Bavota */
+/* https://bavotasan.com/2011/a-simple-fade-with-css3/ */
 
 .candle {
   max-width: 100%;
@@ -40,8 +40,4 @@ html {
   transition: opacity .25s ease-in-out;
   -moz-transition: opacity .25s ease-in-out;
   -webkit-transition: opacity .25s ease-in-out;
-}
-
-.candle:hover {
-  opacity: 1;
 }
