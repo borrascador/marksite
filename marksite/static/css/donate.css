@@ -1,6 +1,8 @@
-/* grid rules */
 /* grid layout inspired by Zell Liew */
 /* https://zellwk.com/blog/responsive-grid-system/ */
+
+/* fade-in inspired by C. Bavota */
+/* https://bavotasan.com/2011/a-simple-fade-with-css3/ */
 
 html {
   box-sizing: border-box;
@@ -10,34 +12,80 @@ html {
 *:before,
 *:after {
   box-sizing: after;
-}    
-
-.l-wrap {
-  max-width: 1140px;
-  margin-right: auto;
-  margin-left: auto;
 }
 
-.grid .grid-item {
-  width: 20%;
-  float: left;
-}  
+@media (min-width:320px)  { 
+  /* smartphones, iPhone, portrait 480x320 phones */
+  
+  .l-wrap {
+    max-width: 260px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .grid {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }  
 
-.grid:after {
-  display: table;
-  clear: both;
-  content: '';
-}  
+  .grid .grid-item {
+    width: 20%;
+    float: left;
+  }
+  
+  #button {
+    width: 50%;
+    margin: auto;
+  }
 
+  .grid:after {
+    display: table;
+    clear: both;
+    content: '';
+  }
+  
+  .candle {
+    max-width: 100%;
+    opacity: 0;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+  }
+}
 
-/* img selectors */
-/* fade-in inspired by C. Bavota */
-/* https://bavotasan.com/2011/a-simple-fade-with-css3/ */
+@media (min-width:481px)  { 
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+  
+  .l-wrap {
+    max-width: 800px;
+  }
+  
+}
 
-.candle {
-  max-width: 100%;
-  opacity: 0;
-  transition: opacity .25s ease-in-out;
-  -moz-transition: opacity .25s ease-in-out;
-  -webkit-transition: opacity .25s ease-in-out;
+@media (min-width:641px)  { 
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+  
+  /* Rules go Here */
+  
+}
+
+@media (min-width:961px)  { 
+  /* tablet, landscape iPad, lo-res laptops ands desktops */  
+  
+  /* Rules go Here */
+  
+}
+
+@media (min-width:1025px) { 
+  /* big landscape tablets, laptops, and desktops */  
+
+  /* Rules go Here */
+
+}
+
+@media (min-width:1281px) { 
+  /* hi-res laptops and desktops */  
+  
+  /* Rules go Here */
+
 }

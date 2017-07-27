@@ -10,19 +10,24 @@
 
 {% block content %}
 
-<button onclick="lightCandle({{ view.loop_times|last }})">DONATE</button>
-
-<button onclick="clearCandles({{ view.loop_times|last }})">CLEAR</button>
-
 <div class="l-wrap">
     <div class="grid">
-        {% for i in view.loop_times %}
+        {% for candle in view.choose_candle %}
             <div class="grid-item">
-                <img src="{% static view.choose_candle %}" class="candle" id="candle_{{ forloop.counter }}">
+                <img src="{% static candle %}" class="candle" id="candle_{{ forloop.counter }}">
             </div>
         {% endfor %}
     </div>
-</div>
+
+    <div class="grid">
+        <div class="grid-item" id="button">
+            <button onclick="lightCandle({{ view.loop_times|last }})">DONATE</button>
+        </div>
+        <div class="grid-item" id="button">
+            <button onclick="clearCandles({{ view.loop_times|last }})">CLEAR</button>
+        </div>
+    </div>
+</div>    
 
 <script src="{% static '/js/donate.js' %}"></script>
 

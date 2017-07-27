@@ -9,11 +9,17 @@ class DonateView(TemplateView):
     template_name = "donate.html"
     
     def loop_times(self):
-        return range(1,21)
+        return range(1, len(self.choose_candle())+1 )
     
     def choose_candle(self):
+        blue = '/images/candle-blue.png'
+        red  = '/images/candle-red.png'
+        
         candles = [
-            '/images/candle-blue.png',
-            '/images/candle-red.png',
+            red, blue, red, red, red,
+            blue, red, blue, red, blue,
+            blue, red, red, red, blue,
+            red, blue, blue, red, red,
+            blue, red, red, red, red,
         ]
-        return random.choice(candles)
+        return candles
