@@ -32,11 +32,6 @@ html {
     width: 20%;
     float: left;
   }
-  
-  #button {
-    width: 50%;
-    margin: auto;
-  }
 
   .grid:after {
     display: table;
@@ -51,13 +46,18 @@ html {
     -moz-transition: opacity .25s ease-in-out;
     -webkit-transition: opacity .25s ease-in-out;
   }
+  
+  button {
+    margin: 0 auto;
+    display: block;
+  }
 }
 
 @media (min-width:481px)  { 
   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
   
   .l-wrap {
-    max-width: 800px;
+    max-width: 750px;
   }
   
 }

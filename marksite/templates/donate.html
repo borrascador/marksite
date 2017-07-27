@@ -19,14 +19,9 @@
         {% endfor %}
     </div>
 
-    <div class="grid">
-        <div class="grid-item" id="button">
-            <button onclick="lightCandle({{ view.loop_times|last }})">DONATE</button>
-        </div>
-        <div class="grid-item" id="button">
-            <button onclick="clearCandles({{ view.loop_times|last }})">CLEAR</button>
-        </div>
-    </div>
+    <button onclick="lightCandle({{ view.loop_times|last }})">DONATE</button>
+    <br>
+    <button onclick="clearCandles({{ view.loop_times|last }})">CLEAR</button>
 </div>    
 
 <script src="{% static '/js/donate.js' %}"></script>

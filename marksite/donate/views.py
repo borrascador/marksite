@@ -12,8 +12,8 @@ class DonateView(TemplateView):
         return range(1, len(self.choose_candle())+1 )
     
     def choose_candle(self):
-        blue = '/images/candle-blue.png'
-        red  = '/images/candle-red.png'
+        blue = '/images/blue-candle.gif'
+        red  = '/images/red-candle.gif'
         
         candles = [
             red, blue, red, red, red,
