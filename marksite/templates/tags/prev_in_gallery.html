@@ -1,11 +1,9 @@
-{% load static %}
-
 {% if photo %}
 <a href="{% url 'image' gallery.slug photo.slug %}">
-    <img src="{% static '/images/leftbutton.png' %}">
+    <i class="glyphicon glyphicon-menu-left"></i>
 </a>
 {% else %}
 <a href="{% url 'gallery-list' %}">      
-    <img src="{% static '/images/leftbutton.png' %}">
+    <i class="glyphicon glyphicon-menu-left"></i>
 </a>
 {% endif %}

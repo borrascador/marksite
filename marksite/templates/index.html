@@ -4,9 +4,15 @@
 
 {% block title %}Home{% endblock %}
 
+{% block extrastyle %}
+<link rel=StyleSheet type="text/css" href="{% static '/css/index.css' %}">
+{% endblock %}
+
 {% block content %}
 
 <div class="index">
+    
+    <div class="img-top"></div>
     
     <h1>Markworld</h1>
 
@@ -21,7 +27,7 @@
     </a>
 
     <a href="{% url 'donate' %}">      
-        <h1>Donate</h1>
+        <h1>Collection Plate</h1>
     </a>
 
 </div>

@@ -37,3 +37,12 @@
   max-height: 100%;
   max-width: 100%;
 }
+
+
+/* glyphicons selectors */
+
+.glyphicon {
+  color: red;
+  font-size:100px;
+  text-align: center;
+}  
