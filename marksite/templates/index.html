@@ -12,23 +12,15 @@
 
 <div class="index">
     
-    <div class="img-top"></div>
+    <div class="img-top">
+        <img src="{% static '/images/homepage/photo5.jpg' %}" class="img-detail">
+    </div>
     
-    <h1>Markworld</h1>
 
-    <h2>Most Grungest Web-Dive This Side of The Great Online E-Ghetto Called WWW</h2>
-
-    <h3>Never Pander, Like, Ever</h3>
-
-    <h1>___________________________</h1>
-
-    <a href="{% url 'gallery-list' %}">      
-        <h1>Galleries</h1>
-    </a>
-
-    <a href="{% url 'donate' %}">      
-        <h1>Collection Plate</h1>
-    </a>
+    <h1>
+        <a class="nav-link" href="{% url 'gallery-list' %}">SORCERER</a>
+        <a class="nav-link" href="{% url 'donate' %}">Collection Plate</a>
+    </h1>
 
 </div>
 

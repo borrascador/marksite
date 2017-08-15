@@ -1,6 +1,6 @@
 body {
   background: #000 !important;
-  font-family: "Courier", monotype;
+  font-family: "Times", serif;
   color: #ed140e;
   margin: 0;
 }  
@@ -17,4 +17,9 @@ body {
 
 a {
   color: #ed140e;
+  text-decoration: none;
+}  
+
+h1, h2, h3, p {
+  font-weight: lighter;
 }  

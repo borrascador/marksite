@@ -1,7 +1,15 @@
 .img-top {
-  background-color:#444444;
   display:table;
   margin:0 auto;
   width:75%;
-  height:1600px;
 }  
+
+.nav-link {
+  margin-left:20px;
+  margin-right:20px;
+}
+
+.img-detail {
+  max-height: 100%;
+  max-width: 100%;
+}
