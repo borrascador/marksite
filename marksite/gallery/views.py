@@ -8,8 +8,8 @@ from photologue.models import Gallery, Photo
 
 
 class GalleryListView(ListView):
-	model = Gallery
-	template_name = "gallery-list.html"
+    model = Gallery
+    template_name = "gallery-list.html"
 	
 class ImageDetailView(DetailView):
     model = Photo    
