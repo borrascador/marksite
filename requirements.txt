@@ -1,11 +1,16 @@
 appdirs==1.4.3
+certifi==2017.7.27.1
+chardet==3.0.4
 Django==1.11.1
 django-photologue==3.7
 django-sortedm2m==1.4.0
 ExifRead==2.1.2
+idna==2.6
 olefile==0.44
 packaging==16.8
 Pillow==4.2.1
 pyparsing==2.2.0
 pytz==2017.2
+requests==2.18.4
 six==1.10.0
+urllib3==1.22

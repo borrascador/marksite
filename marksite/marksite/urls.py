@@ -22,6 +22,13 @@ from views import HomeView, BlackView
 from gallery import urls
 from donate import urls
 
+'''
+from book import urls
+from word import urls
+from song import urls
+from video import urls
+from fair import urls
+'''
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
