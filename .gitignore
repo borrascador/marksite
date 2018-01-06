@@ -5,9 +5,6 @@ __pycache__
 # Virtualenv
 \venv
 
-# Media
-\media
-
 # Keys
 secret.py
 
