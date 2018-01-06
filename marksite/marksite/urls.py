@@ -21,26 +21,26 @@ from django.contrib import admin
 from views import HomeView, BlackView
 from gallery import urls
 from donate import urls
+from music import urls
 
 '''
 from book import urls
 from word import urls
-from song import urls
 from video import urls
 from fair import urls
 '''
 
-urlpatterns = [
+urlpatterns = [ 
     url(r'^admin/', admin.site.urls),
     url(r'^$', HomeView.as_view(), name='home'),
     url(r'^book$', BlackView.as_view(), name='book'),
     url(r'^word$', BlackView.as_view(), name='word'),
-    url(r'^song$', BlackView.as_view(), name='song'),
     url(r'^video$', BlackView.as_view(), name='video'),
     url(r'^fair$', BlackView.as_view(), name='fair'),
-    url(r'^black$', BlackView.as_view(), name='black'),
+    url(r'^black$', BlackView.as_view(), name='black') ,
     url(r'^gallery-list/', include('gallery.urls')),
     url(r'^donate/', include('donate.urls')),
+    url(r'^music/', include('music.urls')),
     url(r'^photologue/', \
         include('photologue.urls', \
         namespace='photologue')

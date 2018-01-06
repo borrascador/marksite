@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+{% extends "photologue/root.html" %}
+{% load static %}
+
+{% block title %}Songs{% endblock %}
+
+{% block extrastyle %}
+<link rel=StyleSheet type="text/css" href="{% static '/css/song-list.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<div class="song-list">
+  {% if object_list %}
+    {% for song in object_list %}
+      <div class="song">
+        <p>{{ song.title }}</p>
+        <audio controls>
+          <source src={{ song.source.url }}>
+        </audio>
+      </div>
+    {% endfor %}
+  {% endif %}
+</div>
+
+{% endblock %}
