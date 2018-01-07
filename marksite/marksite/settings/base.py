@@ -46,6 +46,7 @@ PROJECT_APPS = [
     'sortedm2m',
     'gallery',
     'music',
+    'video',
 ]
 
 INSTALLED_APPS = PREREQ_APPS + PROJECT_APPS

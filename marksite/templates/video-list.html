@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+{% extends "photologue/root.html" %}
+{% load static %}
+
+{% block title %}Video{% endblock %}
+
+{% block extrastyle %}
+<link rel=StyleSheet type="text/css" href="{% static '/css/video-list.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<div class="video-list">
+  {% if object_list %}
+    {% for video in object_list %}
+      <div class="video">
+        <p>{{ video.title }}</p>
+        <video controls>
+          <source src={{ video.source.url }}>
+        </video>
+      </div>
+    {% endfor %}
+  {% endif %}
+</div>
+
+{% endblock %}
